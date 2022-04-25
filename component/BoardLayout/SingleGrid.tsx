@@ -10,6 +10,7 @@ type Props = {
 const SingleGrid = ({ coordinateX, coordinateY }: Props) => {
   return (
     <Box
+      className={`grid-cell grid-cell-${coordinateX}-${coordinateY} grid-empty`}
       sx={{
         margin: "0",
         border: "1px solid black",
@@ -17,9 +18,10 @@ const SingleGrid = ({ coordinateX, coordinateY }: Props) => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        width: 50,
-        height: 50,
-        backgroundColor: "cyan",
+        width: 40,
+        height: 40,
+        backgroundColor: "#1e9eff",
+        // boxShadow: "0 0 0 2px #000",
         transition: "all 0.05s linear",
         "&:hover": {
           backgroundColor: "red",

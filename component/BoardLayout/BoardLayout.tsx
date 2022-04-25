@@ -30,7 +30,13 @@ const BoardLayout = (props: Props) => {
         const { id, title } = player;
         return (
           <Grid key={id} alignContent="center" item md={6}>
-            <Typography variant="h3" align="center">
+            <Typography
+              mb={1}
+              mt={1}
+              sx={{ fontSize: "2rem" }}
+              variant="h2"
+              align="center"
+            >
               {title}
             </Typography>
             <div className={`grid human-player ${styles.gridContainer}`}>

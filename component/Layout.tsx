@@ -11,8 +11,9 @@ type Props = {
 
 const Layout = ({ children }: Props) => {
   const AppBarStyle = {
-    // backgroundColor: "#fff",
-    padding: ".8rem",
+    backgroundColor: "#fff",
+    padding: "0.2rem",
+    color: "black",
   };
 
   return (
